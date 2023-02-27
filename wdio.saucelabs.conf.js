@@ -33,9 +33,13 @@ exports.config = {
     suites: {
         login: [
             './test/specs/android/saucedemo.spec.js'
-        ]},
+    ]},
 
-
+    reporters: [['allure', {
+        outputDir: 'allure-results',
+        disableWebdriverStepsReporting: false,
+        disableWebdriverScreenshotsReporting: false,
+    }]],
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
