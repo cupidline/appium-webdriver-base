@@ -1,7 +1,7 @@
 const catalogPage = require("../../pages/android/catalog-page")
 const loginPage = require("../../pages/android/login-page")
 
-describe('My Appium Script', () => {
+describe('saucedemo with POM', () => {
     it('login in saucedemo app', async () => {
 
         await catalogPage.burgerIcon.click();

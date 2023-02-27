@@ -28,6 +28,14 @@ exports.config = {
     specs: [
         './test/specs/**/*.js'
     ],
+
+    //suites
+    suites: {
+        login: [
+            './test/specs/android/saucedemo.spec.js'
+        ]},
+
+
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
